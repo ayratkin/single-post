@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT } from "./actionTypes";
+import { INCREMENT, DECREMENT, CHANGE_TEXT } from "./actionTypes";
 
 export function incrementLikeActionCreator() {
     return {
@@ -9,5 +9,12 @@ export function incrementLikeActionCreator() {
 export function decrementLikeActionCreator() {
     return {
         type: DECREMENT,
+    }
+}
+
+export function changeText(text) {
+    return {
+        type: CHANGE_TEXT,
+        text,
     }
 }

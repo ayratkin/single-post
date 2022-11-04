@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import Likes from "./likes"
-import {incrementLikeActionCreator, decrementLikeActionCreator} from '../../redux/actionCreators'
+import { incrementLikeActionCreator, decrementLikeActionCreator } from '../../redux/actionCreators'
 
 function mapStateToProps(state) {
     const { likesReducer } = state;
